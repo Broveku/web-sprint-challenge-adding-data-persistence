@@ -26,7 +26,7 @@ exports.up = async function (knex) {
         .onUpdate("restrict");
     })
     .createTable("project_resources", (table) => {
-      table.increments("project_resource_id");
+      table.increments("project_resources_id");
       table
         .integer("project_id")
         .unsigned()
